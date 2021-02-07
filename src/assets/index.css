@@ -1,6 +1,68 @@
 /* ./src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-primary {
+    @apply rounded p-4 w-40  text-center text-xl font-medium text-white bg-green-600 hover:bg-green-500;
+}
+
+.link-item-sm {
+    @apply text-gray-900 text-sm font-medium  hover:text-green-700;
+}
+
+.link-item-base {
+    @apply text-gray-900 text-base font-medium  hover:text-green-700;
+}
+
+.menu-left {
+    /* Flex */
+
+    @apply
+    flex
+    flex-wrap
+    justify-start
+    items-start
+    content-start
+
+    /* Position */
+    fixed
+    pt-8
+    px-8
+    overflow-auto
+
+    /* Size */
+    w-72
+    h-screen 
+
+    /* Media */
+    hidden md:flex
+
+    /* Otros */
+    border-gray-300
+    border-r
+}
+
+.menu-right {
+    @apply
+    /* Flexx */
+    flex
+    flex-wrap
+    justify-start
+    items-start
+    content-start
+
+    /* Size */
+    w-full
+    h-full
+    py-14 px-10
+
+    /* Media */
+    ml-0 md:ml-72
+    md:px-20
+
+    /* Off */
+    duration-300
+}

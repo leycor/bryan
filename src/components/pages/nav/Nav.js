@@ -14,16 +14,16 @@ const Nav = () => {
         <Fragment>
 
         {/* Menú */}
-        <nav className='overflow-hidden sticky top-0 flex justify-between flex-wrap content-center  px-8 w-full h-14 bg-white border-b border-gray-300'>
+        <nav className='z-50 overflow-hidden sticky top-0 flex justify-between flex-wrap content-center  px-8 w-full h-14 bg-white border-b border-gray-300'>
             <div>
-                <p className='text-green-700 font-sans text-lg font-bold'>BRYAN RIVAS</p>
+                <p className='text-green-700 font-neucha tracking-wider text-xl font-bold'>BRYAN RIVAS</p>
             </div>
             <div className='flex flex-wrap content-center hidden md:flex'>
-                <a href="localhost:3000" className='text-gray-900 text-sm font-medium ml-5 hover:text-green-700'>Inicio</a>
-                <a href="localhost:3000" className='text-gray-900 text-sm font-medium ml-5 hover:text-green-700'>Sobre mi</a>
-                <a href="localhost:3000" className='text-gray-900 text-sm font-medium ml-5 hover:text-green-700'>Contacto</a>
-                <a href="localhost:3000" className='text-gray-900 text-sm font-medium ml-5 hover:text-green-700'>Habilidades</a>
-                <a href="localhost:3000" className='text-gray-900 text-sm font-medium ml-5 hover:text-green-700'>Proyectos</a>
+                <a href="localhost:3000" className='link-item-sm ml-3'>Inicio</a>
+                <a href="localhost:3000" className='link-item-sm ml-3'>Sobre mi</a>
+                <a href="localhost:3000" className='link-item-sm ml-3'>Contacto</a>
+                <a href="localhost:3000" className='link-item-sm ml-3'>Habilidades</a>
+                <a href="localhost:3000" className='link-item-sm ml-3'>Proyectos</a>
             </div>
 
             <div onClick={ handleToggleResponsiveMenu } className='menu flex flex-wrap content-center  w-8 cursor-pointer md:hidden'>
@@ -35,15 +35,12 @@ const Nav = () => {
         </nav>
         
         {/* Responsive menú */}
-        <div id='responsiveMenu' className={`fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
-            <a href="localhost:3000" className='text-gray-700 text-base font-medium hover:text-green-700'>Guide</a>
-            <a href="localhost:3000" className='text-gray-700 text-base font-medium pt-3 hover:text-green-700'>Sobre mi</a>
-            <a href="localhost:3000" className='text-gray-700 text-base font-medium pt-3 hover:text-green-700'>Contacto</a>
-            <a href="localhost:3000" className='text-gray-700 text-base font-medium pt-3 hover:text-green-700'>Habilidades</a>
-            <a href="localhost:3000" className='text-gray-700 text-base font-medium pt-3 hover:text-green-700'>Proyectos</a>
-        </div>
-
-        <div className='mt-10 container mx-auto px-10'>
+        <div id='responsiveMenu' className={`z-40 fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
+            <a href="localhost:3000" className='link-item-base mt-3'>Inicio</a>
+            <a href="localhost:3000" className='link-item-base mt-3'>Sobre mi</a>
+            <a href="localhost:3000" className='link-item-base mt-3'>Contacto</a>
+            <a href="localhost:3000" className='link-item-base mt-3'>Habilidades</a>
+            <a href="localhost:3000" className='link-item-base mt-3'>Proyectos</a>
         </div>
         </Fragment>
     );
