@@ -1,13 +1,25 @@
 import React, { Fragment, useState } from 'react'
 
-const Nav = ({title, mainMenu}) => {
+const Nav = ({title, mainMenu,}) => {
 
 
+    // Estado para mostrar u ocultar el menú responsivo
     const [toggleState, setToggleState] = useState(false)
     
+    // Función que controla el menú responsivo
     const handleToggleResponsiveMenu = () => {
-
         setToggleState( !toggleState ? true : false)
+    }
+
+    // Función que da efecto smooth a los link
+    const handleSmooth = (e,link) => {
+        e.preventDefault()
+        const offsetTop = document.querySelector(link).offsetTop;
+        
+        window.scrollTo({
+            top: offsetTop -55,
+            behavior: 'smooth'
+          });
     }
 
     return(
@@ -20,7 +32,7 @@ const Nav = ({title, mainMenu}) => {
             </div>
             <div className='flex flex-wrap content-center hidden md:flex'>
                 {
-                    mainMenu.map( ({link, linkContent}) => <a href={link} className='link-item-sm ml-3'>{linkContent}</a>)
+                    mainMenu.map( ({link, linkContent,id}) => <a onClick={ (e)=> handleSmooth(e,link)} key={id} href={link} className='link-item-sm ml-3 duration-300'>{linkContent}</a>)
                 }
             </div>
 
@@ -35,7 +47,7 @@ const Nav = ({title, mainMenu}) => {
         {/* Responsive menú */}
         <div id='responsiveMenu' className={`z-40 fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
             {
-                mainMenu.map( ({link, linkContent}) => <a href={link} className='link-item-base mt-3'>{linkContent}</a> )
+                mainMenu.map( ({link, linkContent,id}) => <a onClick={ (e)=> handleSmooth(e,link)} key={id} href={link} className='link-item-base mt-3'>{linkContent}</a> )
             }
         </div>
         </Fragment>
