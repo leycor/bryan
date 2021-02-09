@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply rounded p-4 w-40  text-center text-xl font-medium text-white bg-green-600 hover:bg-green-500;
+    @apply rounded p-2 md:p-4 w-40  text-center text-sm md:text-xl font-medium text-white bg-green-600 hover:bg-green-500;
 }
 
 .link-item-sm {

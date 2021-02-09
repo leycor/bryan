@@ -6,6 +6,7 @@ import Banner from '../molecules/Banner'
 import Skill from '../molecules/Skill'
 import Projects from '../molecules/Projects'
 import Footer from '../molecules/Footer'
+import Services from '../molecules/Services'
 
 // imgs
 import img from '../../assets/img/skin.png'
@@ -15,14 +16,14 @@ import img from '../../assets/img/skin.png'
 // Object List
 import { guides } from '../../utils/guides'
 import { projects } from '../../utils/projects'
+import { services } from '../../utils/services'
 
 const MainPage = () => {
 
     const [ mainMenu ] = useState(
         [
             {id: 1, linkContent: 'Inicio', link: '#banner' },
-            {id: 2, linkContent: 'Sobre mi', link: '#about' },
-            {id: 3, linkContent: 'Guias', link: '#guides' },
+            {id: 3, linkContent: 'Habilidades', link: '#guides' },
             {id: 4, linkContent: 'Proyectos', link: '#projects' },
             {id: 5, linkContent: 'Services', link: '#services' },
         ]
@@ -42,6 +43,9 @@ const MainPage = () => {
 
             <Skill guides={guides}/>
             <Projects projects={ projects } />
+            <Services
+                services= {services}
+            />
 
             <Footer
                 title= 'Bryan Rivas Venezuela 2021. All Rights Reserved'

@@ -4,7 +4,7 @@ const Projects = ({projects}) => {
 
     return(
         <Fragment>
-            <section id='projects' className='mb-10 pt-10 pb-10 mx-16 border-t duration-300'>
+            <section id='projects' className='mb-10 pt-10 pb-10 mx-5 md:mx-16 border-t'>
                 <p className='text-center font-bold text-2xl text-gray-700 uppercase'>Proyectos</p>
                 <p className='mb-16  md:mx-24 text-center mt-3 text-base mb-5 text-gray-700'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno</p>
 
