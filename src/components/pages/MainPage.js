@@ -21,30 +21,33 @@ import { services } from '../../utils/services'
 const MainPage = () => {
 
     const [ mainMenu ] = useState(
+
         [
             {id: 1, linkContent: 'Inicio', link: '#banner' },
             {id: 3, linkContent: 'Habilidades', link: '#guides' },
             {id: 4, linkContent: 'Proyectos', link: '#projects' },
-            {id: 5, linkContent: 'Services', link: '#services' },
+            {id: 5, linkContent: 'Servicios', link: '#services' },
         ]
     )
 
     return(
         <Fragment>
+
             <Nav
                 title='BRYAN RIVAS'
                 mainMenu = { mainMenu }
             />
+            
             <Banner
                 title = 'BRYAN RIVAS'
                 img = {img}
-                buttonTitle= 'Comenzar'
+                buttonTitle= 'Curriculum'
             />
 
             <Skill guides={guides}/>
             <Projects projects={ projects } />
             <Services
-                services= {services}
+            services= {services}
             />
 
             <Footer

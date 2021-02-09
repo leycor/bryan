@@ -24,6 +24,7 @@ const Dashboard = () => {
             {/* Menú Right */}
             <div className='menu-right'>
                 <div className='container mx-auto'>
+                    Contenido
                 </div>
             </div>
 
