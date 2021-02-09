@@ -1,11 +1,20 @@
 import React, { Fragment, useState } from 'react'
-import Banner from '../molecules/Banner'
-import Footer from '../molecules/Footer'
-import Nav from '../organisms/Nav'
 
-import img from '../../assets/img/skin.png'
+// Organisms
+import Nav from '../organisms/Nav'
+import Banner from '../molecules/Banner'
 import Skill from '../molecules/Skill'
+import Projects from '../molecules/Projects'
+import Footer from '../molecules/Footer'
+
+// imgs
+import img from '../../assets/img/skin.png'
+
+
+
+// Object List
 import { guides } from '../../utils/guides'
+import { projects } from '../../utils/projects'
 
 const MainPage = () => {
 
@@ -15,7 +24,7 @@ const MainPage = () => {
             {id: 2, linkContent: 'Sobre mi', link: '#about' },
             {id: 3, linkContent: 'Guias', link: '#guides' },
             {id: 4, linkContent: 'Proyectos', link: '#projects' },
-            {id: 5, linkContent: 'Contactame', link: '#contact' },
+            {id: 5, linkContent: 'Services', link: '#services' },
         ]
     )
 
@@ -32,6 +41,7 @@ const MainPage = () => {
             />
 
             <Skill guides={guides}/>
+            <Projects projects={ projects } />
 
             <Footer
                 title= 'Bryan Rivas Venezuela 2021. All Rights Reserved'

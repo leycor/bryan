@@ -4,9 +4,9 @@ const Skill = ({guides}) => {
 
     return(
         <Fragment>
-            <section id='guides' className='mb-10 pt-10 pb-10 mx-16 border-t border-b border-gray-200 duration-300'>
-                <p className='text-center font-bold text-2xl text-gray-700 uppercase'># Mis Guias</p>
-                <p className='mb-16 mx-10 md:mx-24 text-center mt-3 text-base mb-5 text-gray-700'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno</p>
+            <section id='guides' className='mb-10 pt-10 pb-10 mx-16 border-t duration-300'>
+                <p className='text-center font-bold text-2xl text-gray-700 uppercase'>Guias</p>
+                <p className='mb-16  md:mx-24 text-center mt-3 text-base mb-5 text-gray-700'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno</p>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                     {
