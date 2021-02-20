@@ -6,7 +6,6 @@ import Banner from '../molecules/Banner'
 import Skill from '../molecules/Skill'
 import Projects from '../molecules/Projects'
 import Footer from '../molecules/Footer'
-import Services from '../molecules/Services'
 
 // imgs
 import img from '../../assets/img/skin.png'
@@ -16,7 +15,6 @@ import img from '../../assets/img/skin.png'
 // Object List
 import { guides } from '../../utils/guides'
 import { projects } from '../../utils/projects'
-import { services } from '../../utils/services'
 
 const MainPage = () => {
 
