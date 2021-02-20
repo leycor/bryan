@@ -9,7 +9,7 @@ const Footer = ({title, phone, email, linkedin, github}) => {
 
             <div className='mt-1 flex flex-wrap item-start justify-center'>
                 <p className='mr-2'>{title}</p>
-                <p className='mr-2'><i className="fas fa-at"></i>{ email }</p>
+                <p className='mr-2'><i className="fas fa-at mr-1"></i>{ email }</p>
                 <a href='#phone' className='text-gray-800 font-bold hover:text-green-600'><i className="text-lg fab fa-whatsapp"></i> { phone }</a>
             </div>
         </footer>

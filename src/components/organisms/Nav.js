@@ -27,15 +27,18 @@ const Nav = ({title, mainMenu,}) => {
 
         {/* Menú */}
         <nav className='z-50 overflow-hidden sticky top-0 flex justify-between flex-wrap content-center  px-8 w-full h-14 bg-white border-b border-gray-300'>
-            <div>
-                <p className='text-green-700 font-neucha tracking-wider text-xl font-bold'>{ title }</p>
-            </div>
+
+            {/* Título o logo */}
+            <p className='text-green-700 font-neucha tracking-wider text-xl font-bold'>{ title }</p>
+
+            {/* Lista de hipervinculos */}
             <div className='flex flex-wrap content-center hidden md:flex'>
                 {
                     mainMenu.map( ({link, linkContent,id}) => <a onClick={ (e)=> handleSmooth(e,link)} key={id} href={link} className='link-item-sm ml-3 duration-300'>{linkContent}</a>)
                 }
             </div>
-
+            
+            {/* Boton menú responsivo */}
             <div onClick={ handleToggleResponsiveMenu } className='menu flex flex-wrap content-center  w-8 cursor-pointer md:hidden'>
                 <div className="line bg-gray-600 w-full h-1"></div>
                 <div className="line bg-gray-600 w-full h-1 my-1"></div>
@@ -44,7 +47,7 @@ const Nav = ({title, mainMenu,}) => {
 
         </nav>
         
-        {/* Responsive menú */}
+        {/* Menú Responsivo */}
         <div id='responsiveMenu' className={`z-40 fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
             {
                 mainMenu.map( ({link, linkContent,id}) => <a onClick={ (e)=> handleSmooth(e,link)} key={id} href={link} className='link-item-base mt-3'>{linkContent}</a> )

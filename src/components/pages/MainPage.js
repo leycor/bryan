@@ -26,7 +26,6 @@ const MainPage = () => {
             {id: 1, linkContent: 'Inicio', link: '#banner' },
             {id: 3, linkContent: 'Habilidades', link: '#guides' },
             {id: 4, linkContent: 'Proyectos', link: '#projects' },
-            {id: 5, linkContent: 'Servicios', link: '#services' },
         ]
     )
 
@@ -46,9 +45,6 @@ const MainPage = () => {
 
             <Skill guides={guides}/>
             <Projects projects={ projects } />
-            <Services
-            services= {services}
-            />
 
             <Footer
                 title= 'Bryan Rivas Venezuela 2021. All Rights Reserved'
