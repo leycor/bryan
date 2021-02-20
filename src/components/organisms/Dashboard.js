@@ -1,6 +1,7 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-const Dashboard = () => {
+const Dashboard = ({ menuLeft }) => {
 
     return(
         
@@ -11,19 +12,32 @@ const Dashboard = () => {
             <div className='menu-left'>
                 <ul>
                     <li>
-                        <a href='#d' className='font-medium hover:text-green-700'># Requisitos previos</a>
-                        <ul>
-                            <li className='mt-1'>
-                                <a href='#d' className='ml-4 text-gray-700 hover:text-green-700'>Const & let</a>
-                            </li>
-                        </ul>
+                        {
+                            menuLeft.map( ({id, linkContent, link, temary }) =>
+                            <div key={id} className='mb-5'>
+
+                                <NavLink exact to={ link } className='font-bold text-gray-700 hover:text-green-600'># { linkContent }</NavLink>
+                                <ul>
+                                    {
+                                        temary.map( ({id, topic, link}) =>
+                                            <li key={id}className='mt-1'>
+                                                <NavLink to={link} className='uppercase text-xs font-medium text-gray-600 hover:text-green-700'>{topic}</NavLink>
+                                            </li>
+                                        )
+                                    }
+                                </ul>
+
+                            </div>
+                            )
+                        }
+
                     </li>
                 </ul>
             </div>
 
             {/* Menú Right */}
             <div className='menu-right'>
-                <div className='container mx-auto'>
+                <div className='container mx-auto bg-red-100'>
                     Contenido
                 </div>
             </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 
 
 import './assets/index.css'
+import AppRouter from './components/pages/AppRouter';
 
 
 
 const root = document.getElementById('root')
-const ele = <App />
+const ele = <AppRouter />
 ReactDOM.render(ele, root);
 
