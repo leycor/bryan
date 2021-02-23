@@ -1,20 +1,14 @@
 import React, { Fragment } from 'react'
-import Dashboard from '../organisms/Dashboard';
+import Dashboard from '../navbar/Dashboard';
 
 // Molecules
-import NavDashboard from '../organisms/NavDashboard';
+import NavDashboard from '../navbar/NavDashboard';
 
 // utils
-import { reactGuide } from '../../utils/reactGuide';
+import { reactGuide } from '../../utils/all-guides/reactGuide';
+import { menuTop } from '../../utils/menuTop';
 
 const ReactPage = () => {
-
-    const menuTop = [
-
-        {id:1, linkContent:'Inicio', link:'/'},
-        {id:2, linkContent:'Github', link:'/'},
-        {id:3, linkContent:'Linkedin', link:'/'},
-    ]
 
     return(
         <Fragment>

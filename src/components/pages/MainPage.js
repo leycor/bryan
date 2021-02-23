@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 
 // Organisms
-import Nav from '../organisms/Nav'
+import Nav from '../navbar/Nav'
 import Banner from '../molecules/Banner'
 import Skill from '../molecules/Skill'
 import Projects from '../molecules/Projects'
@@ -13,7 +13,7 @@ import img from '../../assets/img/skin.png'
 
 
 // Object List
-import { guides } from '../../utils/guides'
+import { guides } from '../../utils/all-guides/guides'
 import { projects } from '../../utils/projects'
 
 const MainPage = () => {

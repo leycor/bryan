@@ -1,10 +1,10 @@
 import { guides } from "./guides";
 
 // Componentes
-import ReactConocimientos from '../components/molecules/ReactConocimientos'
-import ReactProgramas from '../components/molecules/ReactProgramas'
-import ReactExtensiones from '../components/molecules/ReactExtensiones'
-import ReactIntroduccion from '../components/molecules/ReactIntroduccion'
+import ReactConocimientos from '../../components/molecules/react-guide/ReactConocimientos'
+import ReactProgramas from '../../components/molecules/react-guide/ReactProgramas'
+import ReactExtensiones from '../../components/molecules/react-guide/ReactExtensiones'
+import ReactIntroduccion from '../../components/molecules/react-guide/ReactIntroduccion'
 
 // Obtengo e link de react por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link

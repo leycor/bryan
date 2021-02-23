@@ -11,7 +11,7 @@ import MainPage from './MainPage';
 import ReactPage from './ReactPage';
   
 // utils ( Link de las guias )
-import { guides } from '../../utils/guides';
+import { guides } from '../../utils/all-guides/guides';
 
 // Obtengo e link de react por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link
