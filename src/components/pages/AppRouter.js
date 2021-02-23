@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import {
     BrowserRouter as Router,
     Switch,
     Route,
   } from "react-router-dom";
-
-
+  
+  
 //   Page
 import MainPage from './MainPage';
 import ReactPage from './ReactPage';
+  
+// utils ( Link de las guias )
+import { guides } from '../../utils/guides';
+
+// Obtengo e link de react por medio del id para luego asignarlos a mis temarios
+const reactUrl = guides.find( guide => guide.id === 5).link
   
 
 const AppRouter = () => {
@@ -16,14 +22,16 @@ const AppRouter = () => {
     return(
 
         <Router>
-            <div>
+            <Fragment>
+
                 <Switch>
                     <Route exact path='/'  component={ MainPage }></Route>
-                    <Route exact path='/react'  component={ ReactPage }></Route>
+                    <Route path={ reactUrl }  component={ ReactPage }></Route> { /* reactUrl = "/react" */}
 
                     <Route component={ MainPage }></Route>
                 </Switch>
-            </div>
+                
+            </Fragment>
         </Router>
     );
 }

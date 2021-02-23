@@ -1,5 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import {    
+    Switch,
+    Route,
+     NavLink } from 'react-router-dom'
 
 const Dashboard = ({ menuLeft }) => {
 
@@ -13,15 +16,15 @@ const Dashboard = ({ menuLeft }) => {
                 <ul>
                     <li>
                         {
-                            menuLeft.map( ({id, linkContent, link, temary }) =>
+                            menuLeft.map( ({id, temaryName, topic }) =>
                             <div key={id} className='mb-5'>
 
-                                <NavLink exact to={ link } className='font-bold text-gray-700 hover:text-green-600'># { linkContent }</NavLink>
+                                <p className='text-sm font-bold text-gray-700'># { temaryName }</p>
                                 <ul>
                                     {
-                                        temary.map( ({id, topic, link}) =>
-                                            <li key={id}className='mt-1'>
-                                                <NavLink to={link} className='uppercase text-xs font-medium text-gray-600 hover:text-green-700'>{topic}</NavLink>
+                                        topic.map( ({id, topicName, topicLink}) =>
+                                            <li key={ id }className='mt-1'>
+                                                <NavLink exact to={ topicLink } activeClassName='text-green-700' className='capitalize text-sm font-medium text-gray-600 hover:text-green-600'>{ topicName }</NavLink>
                                             </li>
                                         )
                                     }
@@ -37,14 +40,22 @@ const Dashboard = ({ menuLeft }) => {
 
             {/* Menú Right */}
             <div className='menu-right'>
-                <div className='container mx-auto bg-red-100'>
-                    Contenido
-                </div>
+                <Switch>
+                    {
+                        menuLeft.map( ({ topic }) => 
+                            topic.map( ({ id, topicLink, topicComponent })=> 
+                                <Route key={id} exact path={ topicLink } component={ topicComponent }></Route>
+                            )
+                        )
+                    }
+                </Switch>
             </div>
 
         </div>
     );
 }
+
+
 
 
 export default Dashboard

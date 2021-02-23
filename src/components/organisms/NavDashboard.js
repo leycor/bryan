@@ -12,17 +12,6 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
         setToggleState( !toggleState ? true : false)
     }
 
-    // Función que da efecto smooth a los link
-    const handleSmooth = (e,link) => {
-        e.preventDefault()
-        const offsetTop = document.querySelector(link).offsetTop;
-        
-        window.scrollTo({
-            top: offsetTop -55,
-            behavior: 'smooth'
-          });
-    }
-
     return(
         <Fragment>
 
@@ -52,17 +41,24 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
         
         {/* Menú Responsivo */}
         <div id='responsiveMenu' className={`overflow-auto z-40 fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
+
+            <div className='flex justify-center my-3'>
+                <Link to={ menuTop.find(({ id })=> id === 3).link }><i className="fab fa-linkedin text-2xl p-2 hover:text-green-700"></i></Link>
+                <Link to={ menuTop.find(({ id })=> id === 1).link }><i className="fas fa-home text-2xl p-2 hover:text-green-700"></i></Link>
+                <Link to={ menuTop.find(({ id })=> id === 2).link }><i className="fab fa-github-square text-2xl p-2 hover:text-green-700"></i></Link>
+
+            </div>
             {
-                menuResponsive.map( ({link, linkContent,id, temary}) =>
+                menuResponsive.map( ({id, temaryName, topic}) =>
                 
                     <div key={id} className='mb-5'>
 
-                        <NavLink exact to={link} className='link-item-base mt-3'># {linkContent}</NavLink>
+                        <p className='text-sm font-bold text-gray-700  mt-3'># { temaryName }</p>
                         <ul>
                             {
-                                temary.map( ({id, topic, link}) =>
+                                topic.map( ({id, topicName, topicLink}) =>
                                     <li key={id}className='mt-1'>
-                                        <NavLink to={link} className='uppercase text-xs font-medium text-gray-600 hover:text-green-700'>{topic}</NavLink>
+                                        <NavLink to={topicLink} className='capitalize text-sm font-medium text-gray-600 hover:text-green-700'>{topicName}</NavLink>
                                     </li>
                                 )
                             }
