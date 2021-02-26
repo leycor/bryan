@@ -19,35 +19,20 @@ const ReactConocimientos = () => {
                 mezcló de tal manera que logró hacer.' />
 
 <CodeSection
-lang='js'
+language='xml'
 code=
-{`<body class="container mx-auto mt-5 text-center">
-
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
-    <div class="bg-pink-400">A</div>
-    <div class="bg-pink-400">A</div>
-    <div class="bg-pink-400">A</div>
-    <div class="bg-pink-400">A</div>
+{`
+<div class="grid grid-cols-3">
+    <div class="bg-green-400">A</div>
+    <div class="bg-green-500">B</div>
+    <div class="bg-green-600">C</div>
+    <div class="bg-green-700">D</div>
+    <div class="bg-green-800">E</div>
+    <div class="bg-green-900">F</div>
 </div>
+`}
+    />
 
-</body>
-
-`} />
-<CodeSection
-lang='js'
-code=
-{`<body class="container mx-auto mt-5 text-center">
-
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
-    <div class="bg-pink-400">A</div>
-    <div class="bg-pink-400">A</div>
-    <div class="bg-pink-400">A</div>
-    <div class="bg-pink-400">A</div>
-</div>
-
-</body>
-
-`} />
             </div>
 
         </Fragment>

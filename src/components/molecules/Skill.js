@@ -30,13 +30,13 @@ const Skill = ({guides}) => {
                                             <Link 
                                             to={ link }
                                             className='font-bold text-lg text-gray-700 uppercase hover:text-green-500'># {name} 
-                                            <i className="text-sm ml-2 text-green-500 fas fa-external-link-alt"></i>
+                                            <i className="text-sm ml-2 text-gray-500 fas fa-external-link-alt"></i>
                                             </Link> 
                                             
                                             :
                                             <p 
-                                            className='font-bold text-lg text-gray-700 uppercase hover:text-red-500 hover:line-throug cursor-not-allowed'># {name}
-                                            <i class="text-base ml-2 text-yellow-400 fas fa-exclamation-triangle"></i>
+                                            className='font-bold text-lg text-gray-700 uppercase cursor-not-allowed'># {name}
+                                            <i class="text-sm ml-2 text-gray-400 fas fa-unlink"></i>
                                             </p> 
                                         }
                                     </div>

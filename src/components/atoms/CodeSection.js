@@ -1,13 +1,16 @@
 import React from 'react'
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const CodeSection = ({ code, lang }) => (
+import '../../assets/hack.css'
 
-    <div className="mb-5">
-    <pre className='prettyprint overflow-auto'>
-        <code className={`language-${lang}`}>
+
+const CodeSection = ({ code, language}) => (
+
+    <div className=" text-sm rounded mb-5">
+        <SyntaxHighlighter language={ language } style={ vs2015 }>
             { code }
-        </code>
-    </pre>
+        </SyntaxHighlighter>
 </div>
 )
 
