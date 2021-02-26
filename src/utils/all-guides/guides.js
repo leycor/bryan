@@ -14,7 +14,7 @@ export const guides = [
     {
         id:1, name:'Python', 
         description:'Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​',
-        link:'/python',
+        link:null,
         img: python,
     },
 
@@ -22,14 +22,14 @@ export const guides = [
 
         id:2, name:'Django',
         description:'Django es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador.',
-        link:'/django',
+        link:null,
         img: django,
     },
 
     {
         id:3, name:'Git',
         description:'Git es una herramienta que realiza una función del control de versiones de código de forma distribuida',
-        link:'/git',
+        link:null,
         img: git,
     },
 
@@ -37,7 +37,7 @@ export const guides = [
 
         id:4, name:'Javascript',
         description:'JavaScript es el único lenguaje de programación que funciona en los navegadores de forma nativa',
-        link:'/javascript',
+        link:null,
         img: js,
     },
 
@@ -51,7 +51,7 @@ export const guides = [
     {
         id:6, name:'Tailwind',
         description:'Tailwind CSS es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad que se pueden aplicar con facilidad en el código',
-        link:'/tailwind',
+        link:null,
         img: tailwind,
 
     },
@@ -59,28 +59,29 @@ export const guides = [
     {
         id:7, name:'AdobeXD',
         description:'Adobe XD es un editor de gráficos vectoriales desarrollado para diseñar y crear un prototipo de la experiencia del usuario para páginas web y aplicaciones móviles. ',
-        link:'/adobeXD',
+        link:null,
         img: xd,
 
     },
 
     {
         id:8, name:'Html5',
-        description:'HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas', link:'/html5',
+        description:'HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas', 
+        link:null,
         img: html,
     },
 
     {
         id:9, name:'Css3',
         description:'CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.​',
-        link:'/css3',
+        link:null,
         img: css,
     },
 
     {
         id:10, name:'Bootstrap',
         description:'Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones​',
-        link:'/bootstrap',
+        link:null,
         img: bootstrap,
     },
 
@@ -88,7 +89,7 @@ export const guides = [
     {
         id:11, name:'Illustrator',
         description:'Adobe Illustrator es un editor de gráficos vectoriales', 
-        link:'/illustrator',
+        link:null,
         img: ilus,
     },
 

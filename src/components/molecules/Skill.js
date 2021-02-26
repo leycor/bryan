@@ -23,7 +23,22 @@ const Skill = ({guides}) => {
                                 <div key={id} className='flex flex-col p-5'>
                                     <div className='flex'>
                                         <div style={{backgroundImage: `url(${img})`}} className='w-10  bg-no-repeat'></div>
-                                        <Link to={link} className='font-bold text-lg text-gray-700 uppercase hover:text-green-600'># {name} <i className="text-sm ml-2 text-gray-500 fas fa-external-link-alt"></i></Link>
+                                        
+                                        {
+                                            link !== null
+                                            ?
+                                            <Link 
+                                            to={ link }
+                                            className='font-bold text-lg text-gray-700 uppercase hover:text-green-500'># {name} 
+                                            <i className="text-sm ml-2 text-green-500 fas fa-external-link-alt"></i>
+                                            </Link> 
+                                            
+                                            :
+                                            <p 
+                                            className='font-bold text-lg text-gray-700 uppercase hover:text-red-500 hover:line-throug cursor-not-allowed'># {name}
+                                            <i class="text-base ml-2 text-yellow-400 fas fa-exclamation-triangle"></i>
+                                            </p> 
+                                        }
                                     </div>
                                     <p className='mt-3 text-smt mb-5 text-gray-700'>{description}</p>
                                 </div>
