@@ -1,10 +1,12 @@
 import React from 'react'
 
-const CodeSection = ({ code }) => (
+const CodeSection = ({ code, lang }) => (
 
-    <div className="bg-gray-800 text-gray-300  rounded px-4 overflow-auto mb-5">
-    <pre>
-        { code }
+    <div className="mb-5">
+    <pre className='prettyprint overflow-auto'>
+        <code className={`language-${lang}`}>
+            { code }
+        </code>
     </pre>
 </div>
 )
