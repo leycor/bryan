@@ -40,7 +40,7 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
         </nav>
         
         {/* Menú Responsivo */}
-        <div id='responsiveMenu' className={`overflow-auto z-40 fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
+        <div id='responsiveMenu' className={`pb-14 overflow-auto z-40 fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
             
             {/* Mostrar link con iconos */}
             <div className='flex justify-center my-3'>

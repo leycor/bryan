@@ -14,6 +14,8 @@ import GitDeshacer from "../../components/molecules/git-guide/GitDeshacer";
 import GitConfirmarCambios from "../../components/molecules/git-guide/GitConfirmarCambios";
 import GitCrearRama from "../../components/molecules/git-guide/GitCrearRama";
 import GitCambiarRama from "../../components/molecules/git-guide/GitCambiarRama";
+import GitVisualizarRemoto from "../../components/molecules/git-guide/GitVisualizarRemoto";
+import GitEnviarRemotos from "../../components/molecules/git-guide/GitEnviarRemotos";
 
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const gitUrl = guides.find( guide => guide.id === 3).link
@@ -58,12 +60,21 @@ export const gitGuide = [
             { id:3, topicName:'Descartar cambios', topicComponent: GitDeshacer, topicLink:`${ gitUrl }/descartar-archivos`},
         ]
     },
+
     {
         id:5,
         temaryName:'RAMAS',
         topic: [
             { id:1, topicName:'Crear nueva rama', topicComponent: GitCrearRama, topicLink:`${ gitUrl }/crear-rama`},
             { id:2, topicName:'Cambiar Rama o versiones', topicComponent: GitCambiarRama, topicLink:`${ gitUrl }/cambiar-rama`},
+        ]
+    },
+    {
+        id:6,
+        temaryName:'TRABAJOS REMOTOS',
+        topic: [
+            { id:1, topicName:'Visualizar & agregar', topicComponent: GitVisualizarRemoto, topicLink:`${ gitUrl }/visualizar-agregar-remotos`},
+            { id:2, topicName:'Enviar | obtener | eliminar', topicComponent: GitEnviarRemotos, topicLink:`${ gitUrl }/enviar-obtener-remotos`},
         ]
     },
 ]
