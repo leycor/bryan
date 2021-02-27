@@ -25,7 +25,7 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
             <div className='flex flex-wrap content-center hidden md:flex'>
                 {
                     menuTop.map( ({link, linkContent,id}) =>
-                    <Link key={id} to={link} className='link-item-sm ml-3 duration-300'>{linkContent} <i className="text-xs ml-1 text-gray-500 fas fa-external-link-alt"></i></Link>
+                    <Link key={id}  to={link} className='link-item-sm ml-3 duration-300'>{linkContent} <i className="text-xs ml-1 text-gray-500 fas fa-external-link-alt"></i></Link>
                     )
                 }
             </div>
@@ -41,13 +41,16 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
         
         {/* Menú Responsivo */}
         <div id='responsiveMenu' className={`overflow-auto z-40 fixed flex flex-col px-7 bg-white py-5 border-gray-300 border-r h-screen w-64 duration-300 ${ !toggleState ? '-ml-Nmedium': null} md:-ml-Nmedium`} >
-
+            
+            {/* Mostrar link con iconos */}
             <div className='flex justify-center my-3'>
-                <Link to={ menuTop.find(({ id })=> id === 3).link }><i className="fab fa-linkedin text-2xl p-2 hover:text-green-700"></i></Link>
-                <Link to={ menuTop.find(({ id })=> id === 1).link }><i className="fas fa-home text-2xl p-2 hover:text-green-700"></i></Link>
-                <Link to={ menuTop.find(({ id })=> id === 2).link }><i className="fab fa-github-square text-2xl p-2 hover:text-green-700"></i></Link>
+                <Link  to={ menuTop.find(({ id })=> id === 3).link }><i className="fab fa-linkedin text-2xl p-2 hover:text-green-700"></i></Link>
+                <Link  to={ menuTop.find(({ id })=> id === 1).link }><i className="fas fa-home text-2xl p-2 hover:text-green-700"></i></Link>
+                <Link  to={ menuTop.find(({ id })=> id === 2).link }><i className="fab fa-github-square text-2xl p-2 hover:text-green-700"></i></Link>
 
             </div>
+
+            {/* Mostrar link del contenido de la guia */}
             {
                 menuResponsive.map( ({id, temaryName, topic}) =>
                 
@@ -58,7 +61,7 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
                             {
                                 topic.map( ({id, topicName, topicLink}) =>
                                     <li key={id}className='mt-1'>
-                                        <NavLink to={topicLink} className='capitalize text-sm font-medium text-gray-600 hover:text-green-700'>{topicName}</NavLink>
+                                        <NavLink exact to={topicLink} activeClassName='text-green-700' className='capitalize text-sm font-medium text-gray-600 hover:text-green-700'>{topicName}</NavLink>
                                     </li>
                                 )
                             }

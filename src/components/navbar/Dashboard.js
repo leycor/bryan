@@ -2,6 +2,7 @@ import React from 'react'
 import {    
     Switch,
     Route,
+    Redirect,
      NavLink } from 'react-router-dom'
 
 const Dashboard = ({ menuLeft }) => {
@@ -38,16 +39,17 @@ const Dashboard = ({ menuLeft }) => {
                 </ul>
             </div>
 
-            {/* Menú Right */}
+            {/* Content Right */}
             <div className='menu-right'>
                 <Switch>
                     {
                         menuLeft.map( ({ topic }) => 
                             topic.map( ({ id, topicLink, topicComponent })=> 
                                 <Route key={id} exact path={ topicLink } component={ topicComponent }></Route>
-                            )
-                        )
+                                )
+                                )
                     }
+                    <Redirect to='/not-found'></Redirect>
                 </Switch>
             </div>
 

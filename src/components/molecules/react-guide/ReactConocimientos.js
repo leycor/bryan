@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 // Atoms
 import TitleSection from "../../atoms/TitleSection";
+import SubTitleSection from "../../atoms/SubTitleSection";
 import DescriptionSection from "../../atoms/DescriptionSection";
 import CodeSection from "../../atoms/CodeSection";
 
@@ -10,6 +11,8 @@ const ReactConocimientos = () => {
         <Fragment>
             <div className="container mx-auto mb-10">
                 <TitleSection title='# CONOCIMIENTOS PREVIOS' />
+
+                <SubTitleSection subTitle='HTML' />
 
                 <DescriptionSection
                 description='Lorem Ipsum es simplemente el texto de relleno de las imprentas y

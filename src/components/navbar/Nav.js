@@ -30,7 +30,7 @@ const Nav = ({title, mainMenu,}) => {
         <nav className='z-50 overflow-hidden sticky top-0 flex justify-between flex-wrap content-center  px-8 w-full h-14 bg-white border-b border-gray-300'>
 
             {/* Título o logo */}
-            <p className='text-green-700 text-xl font-bold'>{ title }</p>
+            <p className='tracking-tight text-green-700 text-xl font-bold'>{ title }</p>
 
             {/* Lista de hipervinculos */}
             <div className='flex flex-wrap content-center hidden md:flex'>

@@ -3,12 +3,14 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    Redirect,
   } from "react-router-dom";
   
   
 //   Page
 import MainPage from './MainPage';
 import ReactPage from './ReactPage';
+import NotFound from './NotFound';
   
 // utils ( Link de las guias )
 import { guides } from '../../utils/all-guides/guides';
@@ -26,9 +28,10 @@ const AppRouter = () => {
 
                 <Switch>
                     <Route exact path='/'  component={ MainPage }></Route>
-                    <Route path={ reactUrl }  component={ ReactPage }></Route> { /* reactUrl = "/react" */}
+                    <Route strict path={ reactUrl }  component={ ReactPage }></Route> { /* reactUrl = "/react" */}
 
-                    <Route component={ MainPage }></Route>
+                    <Route exact path='/not-found' component={ NotFound }></Route>
+                    <Redirect to='/not-found'></Redirect>
                 </Switch>
                 
             </Fragment>

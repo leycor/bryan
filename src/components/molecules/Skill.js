@@ -36,7 +36,7 @@ const Skill = ({guides}) => {
                                             :
                                             <p 
                                             className='font-bold text-lg text-gray-700 uppercase cursor-not-allowed'># {name}
-                                            <i class="text-sm ml-2 text-gray-400 fas fa-unlink"></i>
+                                            <i className="text-sm ml-2 text-gray-400 fas fa-unlink"></i>
                                             </p> 
                                         }
                                     </div>
