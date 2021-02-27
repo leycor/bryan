@@ -29,7 +29,7 @@ export const guides = [
     {
         id:3, name:'Git',
         description:'Git es una herramienta que realiza una función del control de versiones de código de forma distribuida',
-        link:null,
+        link:'/git',
         img: git,
     },
 

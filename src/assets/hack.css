@@ -2,3 +2,9 @@ pre {
     padding-left: 2em !important;
     padding-right: 2em !important;
 }
+
+.guide-section p {
+    color:#505050;
+    font-weight: 400;
+    margin-bottom: .8em;
+}

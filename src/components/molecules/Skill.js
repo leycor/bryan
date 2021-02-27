@@ -29,13 +29,13 @@ const Skill = ({guides}) => {
                                             ?
                                             <Link 
                                             to={ link }
-                                            className='font-bold text-lg text-gray-700 uppercase hover:text-green-500'># {name} 
+                                            className='font-bold text-lg text-gray-700 uppercase hover:text-green-600'><i class="text-green-600 fas fa-check"></i> {name} 
                                             <i className="text-sm ml-2 text-gray-500 fas fa-external-link-alt"></i>
                                             </Link> 
                                             
                                             :
                                             <p 
-                                            className='font-bold text-lg text-gray-700 uppercase cursor-not-allowed'># {name}
+                                            className='font-bold text-lg text-gray-500 uppercase cursor-not-allowed line-through'># {name}
                                             <i className="text-sm ml-2 text-gray-400 fas fa-unlink"></i>
                                             </p> 
                                         }

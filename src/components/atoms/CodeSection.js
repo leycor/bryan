@@ -7,7 +7,7 @@ import '../../assets/hack.css'
 
 const CodeSection = ({ code, language}) => (
 
-    <div className=" text-sm rounded mb-5">
+    <div className=" text-sm rounded mb-10">
         <SyntaxHighlighter language={ language } style={ vs2015 }>
             { code }
         </SyntaxHighlighter>

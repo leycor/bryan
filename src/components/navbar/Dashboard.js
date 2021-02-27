@@ -49,7 +49,7 @@ const Dashboard = ({ menuLeft }) => {
                                 )
                                 )
                     }
-                    <Redirect to='/not-found'></Redirect>
+                    {/* <Redirect to='/not-found'></Redirect> */}
                 </Switch>
             </div>
 
