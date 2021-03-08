@@ -30,7 +30,7 @@ $ git add .
 
 
                 <DescriptionSection
-                description='Ahora si vuelves a ver el estado del proyecto, verás que el archivo ***README está siendo rastreado y está preparado para ser confirmado***'
+                description='> Ahora si vuelves a ver el estado del proyecto, verás que el archivo ***README está siendo rastreado y está preparado para ser confirmado***'
                 />
                 <CodeSection
                 language='bash'
@@ -44,7 +44,7 @@ Changes to be committed:
 `} />
 
                 <DescriptionSection
-                description='Puedes ver que está siendo rastreado porque aparece luego del encabezado “Cambios a ser confirmados” (“Changes to be committed” en inglés). Si confirmas en este punto, se guardará en el historial la versión del archivo correspondiente al instante en que ejecutaste git add.'
+                description='> Puedes ver que está siendo rastreado porque aparece luego del encabezado “Cambios a ser confirmados” (“Changes to be committed” en inglés). Si confirmas en este punto, se guardará en el historial la versión del archivo correspondiente al instante en que ejecutaste git add.'
                 />
 
 

@@ -2,7 +2,7 @@ import React from 'react'
 import {    
     Switch,
     Route,
-    Redirect,
+    // Redirect,
      NavLink } from 'react-router-dom'
 
 const Dashboard = ({ menuLeft }) => {
@@ -13,7 +13,7 @@ const Dashboard = ({ menuLeft }) => {
         <div className='flex'>
 
             {/* Menú left */}
-            <div className='menu-left'>
+            <div className='pb-16 menu-left'>
                 <ul>
                     <li>
                         {

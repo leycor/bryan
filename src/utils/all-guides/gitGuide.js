@@ -1,6 +1,7 @@
 // 1- Importación de guias
 import { guides } from "./guides";
 
+
 // 2- Importación de Componentes dónde se renderizaran las guias
 import Git from '../../components/molecules/git-guide/Git'
 import GitInstalacion from "../../components/molecules/git-guide/GitInstalacion";
@@ -17,10 +18,12 @@ import GitCambiarRama from "../../components/molecules/git-guide/GitCambiarRama"
 import GitVisualizarRemoto from "../../components/molecules/git-guide/GitVisualizarRemoto";
 import GitEnviarRemotos from "../../components/molecules/git-guide/GitEnviarRemotos";
 
+
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const gitUrl = guides.find( guide => guide.id === 3).link
 
 // 4- Crear lista contenedora de guia
+
 
 export const gitGuide = [
     {

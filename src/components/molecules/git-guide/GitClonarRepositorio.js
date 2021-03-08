@@ -28,7 +28,7 @@ $ git clone https://github.com/libgit2/libgit2
                 `} />
 
                 <DescriptionSection
-                description='***Esto crea un directorio llamado libgit2***, inicializa un directorio .git en su interior, descarga toda la información de ese repositorio y saca una copia de trabajo de la última versión. Si te metes en el directorio libgit2, verás que están los archivos del proyecto listos para ser utilizados.'
+                description='>***Esto crea un directorio llamado libgit2***, inicializa un directorio .git en su interior, descarga toda la información de ese repositorio y saca una copia de trabajo de la última versión. Si te metes en el directorio libgit2, verás que están los archivos del proyecto listos para ser utilizados.'
                 />
 
             <DocumentationSection link='https://git-scm.com/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git' />

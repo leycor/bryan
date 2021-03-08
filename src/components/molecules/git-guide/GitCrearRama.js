@@ -25,7 +25,7 @@ $ git branch testing
 `} />
 
                 <DescriptionSection
-                description='el comando git branch solamente crea una nueva rama, ***pero no salta a dicha rama***'
+                description='> el comando git branch solamente crea una nueva rama, ***pero no salta a dicha rama***'
                 />
 
 

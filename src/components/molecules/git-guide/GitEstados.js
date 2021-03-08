@@ -27,7 +27,7 @@ $ git status
                 `} />
 
                 <DescriptionSection
-                description='Esto significa que tienes un directorio de trabajo limpio - en otras palabras, que no hay archivos rastreados y modificados.'
+                description='> Esto significa que tienes un directorio de trabajo limpio - en otras palabras, que no hay archivos rastreados y modificados.'
                 />
 
                 <DescriptionSection
@@ -49,7 +49,7 @@ nothing added to commit but untracked files present (use "git add" to tracK)
                 `} />
 
                 <DescriptionSection
-                description='Puedes ver que el archivo ***README*** está sin rastrear porque aparece debajo del encabezado ***“Untracked files” (“Archivos no rastreados” en inglés) en la salida.*** Sin rastrear significa que Git ve archivos que no tenías en el commit anterior. Git no los incluirá en tu próximo commit a menos que se lo indiques explícitamente'
+                description='> Puedes ver que el archivo ***README*** está sin rastrear porque aparece debajo del encabezado ***“Untracked files” (“Archivos no rastreados” en inglés) en la salida.*** Sin rastrear significa que Git ve archivos que no tenías en el commit anterior. Git no los incluirá en tu próximo commit a menos que se lo indiques explícitamente'
                 />
 
             <DocumentationSection link='https://git-scm.com/book/es/v2/Fundamentos-de-Git-Guardando-cambios-en-el-Repositorio' />
