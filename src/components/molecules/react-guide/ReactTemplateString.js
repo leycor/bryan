@@ -21,8 +21,8 @@ const ReactTemplateString = () => {
                 <CodeSection
                 language='javascript'
                 code={`
-const nombre   = 'Fernando';
-const apellido = 'Herrera';
+const nombre   = 'Bryan';
+const apellido = 'Rivas';
 const nombreComplteto = '$ { nombre } $ { apellido } '
                 
 

@@ -16,6 +16,10 @@ import ReactPromesas from "../../components/molecules/react-guide/ReactPromesas"
 import ReactFetch from "../../components/molecules/react-guide/ReactFetch";
 import ReactTernario from "../../components/molecules/react-guide/ReactTernario";
 import ReactAsync from "../../components/molecules/react-guide/ReactAsync";
+import ReactJsx from "../../components/molecules/react-guide/ReactJsx";
+import ReactComponents from "../../components/molecules/react-guide/ReactComponents";
+import ReactPropTypes from "../../components/molecules/react-guide/ReactPropTypes";
+import ReactEvents from "../../components/molecules/react-guide/ReactEvents";
 
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link
@@ -54,11 +58,12 @@ export const reactGuide = [
 
   {
     id: 3,
-    temaryName: "COMPONENTES",
+    temaryName: "CONCEPTOS BÁSICOS",
     topic: [
-      { id: 1, topicName: "components1", topicLink: `${reactUrl}/components1` },
-      { id: 2, topicName: "components2", topicLink: `${reactUrl}/components2` },
-      { id: 3, topicName: "components3", topicLink: `${reactUrl}/components3` },
+      { id: 1, topicName: "Jsx", topicComponent: ReactJsx, topicLink: `${reactUrl}/jsx` },
+      { id: 2, topicName: "Componentes & Propiedades", topicComponent: ReactComponents, topicLink: `${reactUrl}/componentes` },
+      { id: 3, topicName: "Proptypes", topicComponent: ReactPropTypes, topicLink: `${reactUrl}/proptypes` },
+      { id: 4, topicName: "Eventos", topicComponent: ReactEvents, topicLink: `${reactUrl}/eventos` },
     ],
   },
 
@@ -66,9 +71,9 @@ export const reactGuide = [
     id: 4,
     temaryName: "HOOKS",
     topic: [
-      { id: 1, topicName: "hooks1", topicLink: `${reactUrl}/hooks1` },
-      { id: 2, topicName: "hooks2", topicLink: `${reactUrl}/hooks2`},
-      { id: 3, topicName: "hooks3", topicLink: `${reactUrl}/hooks3` },
+      { id: 1, topicName: "useState", topicLink: `${reactUrl}/hooks1` },
+      { id: 2, topicName: "useEffect", topicLink: `${reactUrl}/hooks2`},
+      { id: 3, topicName: "useContext", topicLink: `${reactUrl}/hooks3` },
     ],
   },
 
