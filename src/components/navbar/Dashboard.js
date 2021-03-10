@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {    
     Switch,
     Route,
@@ -6,6 +6,13 @@ import {
      NavLink } from 'react-router-dom'
 
 const Dashboard = ({ menuLeft }) => {
+
+    useEffect(() => {
+
+        window.scrollTo({
+            top: 0,
+        });
+    },)
 
     return(
         
