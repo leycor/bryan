@@ -8,7 +8,7 @@ import Projects from '../molecules/Projects'
 import Footer from '../molecules/Footer'
 
 // imgs
-import img from './../../assets/img/skin.png'
+import img from '../../assets/img/skin.png'
 
 
 
