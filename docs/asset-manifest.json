@@ -30,9 +30,9 @@
     "static/media/xd.bc199b4a.svg": "./static/media/xd.bc199b4a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1acbe252.js",
-    "static/js/2.02989e4d.chunk.js",
-    "static/css/main.d0ea30f6.chunk.css",
-    "static/js/main.27204ea6.chunk.js"
+    "./static/js/runtime-main.1acbe252.js",
+    "./static/js/2.02989e4d.chunk.js",
+    "./static/css/main.d0ea30f6.chunk.css",
+    "./static/js/main.27204ea6.chunk.js"
   ]
 }
