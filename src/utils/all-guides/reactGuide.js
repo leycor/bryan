@@ -20,6 +20,11 @@ import ReactJsx from "../../components/molecules/react-guide/ReactJsx";
 import ReactComponents from "../../components/molecules/react-guide/ReactComponents";
 import ReactPropTypes from "../../components/molecules/react-guide/ReactPropTypes";
 import ReactEvents from "../../components/molecules/react-guide/ReactEvents";
+import ReactUseState from "../../components/molecules/react-guide/ReactUseState";
+import ReactUseEffect from "../../components/molecules/react-guide/ReactUseEffect";
+import ReactHooksReglas from "../../components/molecules/react-guide/ReactHooksReglas";
+import ReactHooksCustom from "../../components/molecules/react-guide/ReactHooksCustom";
+import ReactUseContext from "../../components/molecules/react-guide/ReactUseContext";
 
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link
@@ -71,9 +76,11 @@ export const reactGuide = [
     id: 4,
     temaryName: "HOOKS",
     topic: [
-      { id: 1, topicName: "useState", topicLink: `${reactUrl}/hooks1` },
-      { id: 2, topicName: "useEffect", topicLink: `${reactUrl}/hooks2`},
-      { id: 3, topicName: "useContext", topicLink: `${reactUrl}/hooks3` },
+      { id: 1, topicName: "useState", topicComponent: ReactUseState, topicLink: `${reactUrl}/usestate` },
+      { id: 2, topicName: "useEffect", topicComponent: ReactUseEffect, topicLink: `${reactUrl}/useeffect`},
+      { id: 3, topicName: "Custom Hook", topicComponent: ReactHooksCustom, topicLink: `${reactUrl}/custom-hooks`},
+      { id: 4, topicName: "useContext", topicComponent: ReactUseContext, topicLink: `${reactUrl}/usecontext`},
+      { id: 5, topicName: "Reglas", topicComponent: ReactHooksReglas, topicLink: `${reactUrl}/reglas` },
     ],
   },
 
