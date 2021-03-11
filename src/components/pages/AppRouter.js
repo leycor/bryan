@@ -29,7 +29,7 @@ const AppRouter = () => {
             <Fragment>
 
                 <Switch>
-                    <Route exact path='/bryan'  component={ MainPage }></Route>
+                    <Route exact path='/'  component={ MainPage }></Route>
                     <Route strict path={ reactUrl }  component={ ReactPage }></Route>
                     <Route strict path={ gitUrl }  component={ GitPage }></Route>
 
