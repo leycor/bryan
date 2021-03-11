@@ -21,6 +21,7 @@ const Nav = ({title, mainMenu,}) => {
             top: offsetTop -55,
             behavior: 'smooth'
           });
+          setToggleState(false)
     }
 
     return(
