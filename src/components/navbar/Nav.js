@@ -21,7 +21,9 @@ const Nav = ({title, mainMenu,}) => {
             top: offsetTop -55,
             behavior: 'smooth'
           });
-          setToggleState(false)
+
+        //Cerrar menú cuando seleccione vinculo
+        setToggleState(false);
     }
 
     return(

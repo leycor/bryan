@@ -61,7 +61,7 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
                             {
                                 topic.map( ({id, topicName, topicLink}) =>
                                     <li key={id}className='mt-1'>
-                                        <NavLink onClick={()=>setToggleState(false)} exact to={topicLink} activeClassName='text-green-700' className='capitalize text-sm font-medium text-gray-600 hover:text-green-700'>{topicName}</NavLink>
+                                        <NavLink onClick={ ()=>setToggleState(false) } exact to={topicLink} activeClassName='text-green-700' className='capitalize text-sm font-medium text-gray-600 hover:text-green-700'>{topicName}</NavLink>
                                     </li>
                                 )
                             }
