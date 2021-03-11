@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bryan/static/css/main.d0ea30f6.chunk.css",
-    "main.js": "/bryan/static/js/main.ebda8c48.chunk.js",
-    "main.js.map": "/bryan/static/js/main.ebda8c48.chunk.js.map",
+    "main.css": "/bryan/static/css/main.18702f52.chunk.css",
+    "main.js": "/bryan/static/js/main.4783d4f0.chunk.js",
+    "main.js.map": "/bryan/static/js/main.4783d4f0.chunk.js.map",
     "runtime-main.js": "/bryan/static/js/runtime-main.1dac85eb.js",
     "runtime-main.js.map": "/bryan/static/js/runtime-main.1dac85eb.js.map",
     "static/js/2.02989e4d.chunk.js": "/bryan/static/js/2.02989e4d.chunk.js",
     "static/js/2.02989e4d.chunk.js.map": "/bryan/static/js/2.02989e4d.chunk.js.map",
     "index.html": "/bryan/index.html",
-    "static/css/main.d0ea30f6.chunk.css.map": "/bryan/static/css/main.d0ea30f6.chunk.css.map",
+    "static/css/main.18702f52.chunk.css.map": "/bryan/static/css/main.18702f52.chunk.css.map",
     "static/js/2.02989e4d.chunk.js.LICENSE.txt": "/bryan/static/js/2.02989e4d.chunk.js.LICENSE.txt",
     "static/media/911beds.5f30bb98.svg": "/bryan/static/media/911beds.5f30bb98.svg",
     "static/media/bootstrap.333f5e43.svg": "/bryan/static/media/bootstrap.333f5e43.svg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.1dac85eb.js",
     "static/js/2.02989e4d.chunk.js",
-    "static/css/main.d0ea30f6.chunk.css",
-    "static/js/main.ebda8c48.chunk.js"
+    "static/css/main.18702f52.chunk.css",
+    "static/js/main.4783d4f0.chunk.js"
   ]
 }
