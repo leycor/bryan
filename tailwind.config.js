@@ -57,10 +57,7 @@ module.exports = {
       '7xl': '5rem',
     },
 
-    fontFamily: {
-      'open': ['Open Sans'],
-      'neucha': ['Neucha'],
-    },
+
 
 
     extend: {
