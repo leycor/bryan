@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/bryan/static/css/main.d0ea30f6.chunk.css",
+    "main.js": "/bryan/static/js/main.1d039c08.chunk.js",
+    "main.js.map": "/bryan/static/js/main.1d039c08.chunk.js.map",
+    "runtime-main.js": "/bryan/static/js/runtime-main.1dac85eb.js",
+    "runtime-main.js.map": "/bryan/static/js/runtime-main.1dac85eb.js.map",
+    "static/js/2.02989e4d.chunk.js": "/bryan/static/js/2.02989e4d.chunk.js",
+    "static/js/2.02989e4d.chunk.js.map": "/bryan/static/js/2.02989e4d.chunk.js.map",
+    "index.html": "/bryan/index.html",
+    "static/css/main.d0ea30f6.chunk.css.map": "/bryan/static/css/main.d0ea30f6.chunk.css.map",
+    "static/js/2.02989e4d.chunk.js.LICENSE.txt": "/bryan/static/js/2.02989e4d.chunk.js.LICENSE.txt",
+    "static/media/911beds.5f30bb98.svg": "/bryan/static/media/911beds.5f30bb98.svg",
+    "static/media/bootstrap.333f5e43.svg": "/bryan/static/media/bootstrap.333f5e43.svg",
+    "static/media/club.2c74ada7.svg": "/bryan/static/media/club.2c74ada7.svg",
+    "static/media/css.b3c0acbf.svg": "/bryan/static/media/css.b3c0acbf.svg",
+    "static/media/django.83a208fa.svg": "/bryan/static/media/django.83a208fa.svg",
+    "static/media/git.45c85edf.svg": "/bryan/static/media/git.45c85edf.svg",
+    "static/media/html.8c11e1a8.svg": "/bryan/static/media/html.8c11e1a8.svg",
+    "static/media/ilus.41df4493.svg": "/bryan/static/media/ilus.41df4493.svg",
+    "static/media/js.f719efab.svg": "/bryan/static/media/js.f719efab.svg",
+    "static/media/laravel.9d559409.svg": "/bryan/static/media/laravel.9d559409.svg",
+    "static/media/none.39bbc2cc.svg": "/bryan/static/media/none.39bbc2cc.svg",
+    "static/media/php.e7123345.svg": "/bryan/static/media/php.e7123345.svg",
+    "static/media/python.597b2f1f.svg": "/bryan/static/media/python.597b2f1f.svg",
+    "static/media/react.7098e271.svg": "/bryan/static/media/react.7098e271.svg",
+    "static/media/skin.d4c11371.png": "/bryan/static/media/skin.d4c11371.png",
+    "static/media/tailwind.717d7e81.svg": "/bryan/static/media/tailwind.717d7e81.svg",
+    "static/media/tatuate.99cac513.svg": "/bryan/static/media/tatuate.99cac513.svg",
+    "static/media/xd.bc199b4a.svg": "/bryan/static/media/xd.bc199b4a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1dac85eb.js",
+    "static/js/2.02989e4d.chunk.js",
+    "static/css/main.d0ea30f6.chunk.css",
+    "static/js/main.1d039c08.chunk.js"
+  ]
+}
