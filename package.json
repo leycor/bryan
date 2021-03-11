@@ -2,7 +2,7 @@
   "name": "react-tailwind",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://leycor.github.io/bryan",
+  "homepage": "http://leycor.github.io/bryan/",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@tailwindcss/postcss7-compat": "^2.0.2",

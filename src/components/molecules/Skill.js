@@ -22,7 +22,7 @@ const Skill = ({guides}) => {
 
                                 <div key={id} className='flex flex-col p-5'>
                                     <div className='flex'>
-                                        <div style={{backgroundImage: `url(./${img})`}} className='w-10  bg-no-repeat'></div>
+                                        <div style={{backgroundImage: `url(.${img})`}} className='w-10  bg-no-repeat'></div>
                                         
                                         {
                                             link !== null
