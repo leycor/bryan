@@ -14,7 +14,7 @@ const Git = () => {
         <Fragment>
             <div className="container mx-auto mb-10 guide-section">
 
-                <ImgSection img={`.${gitImg}`} />
+                <ImgSection img={`${gitImg}`} />
 
                 {/* Definición */}
                 <SubTitleSection subTitle='INTRODUCCIÓN A GIT' />

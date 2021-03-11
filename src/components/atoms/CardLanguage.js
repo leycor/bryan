@@ -9,7 +9,7 @@ const CardLanguage = ( { language=[], tecnology }) => (
         {
             language.map( ({id, name}) =>
             
-            <div key={id} style={{backgroundImage: `url(.${name})`}} className='mr-1 inline-block h-5 w-5 bg-no-repeat mb-1'></div> 
+            <div key={id} style={{backgroundImage: `url(${name})`}} className='mr-1 inline-block h-5 w-5 bg-no-repeat mb-1'></div> 
             )
         }
     </div>

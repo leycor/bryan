@@ -14,7 +14,7 @@ const ReactIntroduccion = () => {
         <Fragment>
             <div className="container mx-auto mb-10 guide-section">
 
-                <ImgSection img={`.${reactImg}`} />
+                <ImgSection img={`${reactImg}`} />
 
                 {/* Definición */}
                 <SubTitleSection subTitle='INTRODUCCIÓN A REACTJS' />
