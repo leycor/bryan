@@ -25,6 +25,8 @@ import ReactUseEffect from "../../components/molecules/react-guide/ReactUseEffec
 import ReactHooksReglas from "../../components/molecules/react-guide/ReactHooksReglas";
 import ReactHooksCustom from "../../components/molecules/react-guide/ReactHooksCustom";
 import ReactUseContext from "../../components/molecules/react-guide/ReactUseContext";
+import ReactTailwind from "../../components/molecules/react-guide/ReactTailwind";
+import ReactGitPages from "../../components/molecules/react-guide/ReactGitPages";
 
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link
@@ -91,6 +93,15 @@ export const reactGuide = [
       { id: 1, topicName: "reactRouter1", topicLink: `${reactUrl}/react-router1` },
       { id: 2, topicName: "reactRouter2", topicLink: `${reactUrl}/react-router2` },
       { id: 3, topicName: "reactRouter3", topicLink: `${reactUrl}/react-router3` },
+    ],
+  },
+
+  {
+    id: 6,
+    temaryName: "UTILIDADES",
+    topic: [
+      { id: 1, topicName: "Tailwind & React", topicComponent: ReactTailwind, topicLink: `${reactUrl}/react-tailwind` },
+      { id: 2, topicName: "Github Pages & React", topicComponent: ReactGitPages, topicLink: `${reactUrl}/react-github-pages` },
     ],
   },
 ];
