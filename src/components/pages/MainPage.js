@@ -36,7 +36,7 @@ const MainPage = () => {
             />
             
             <Banner
-                title = 'BRYAN RIVAS'
+                title = 'LIZZ TE AMO =)'
                 img = {img}
                 buttonTitle= 'Curriculum'
             />
