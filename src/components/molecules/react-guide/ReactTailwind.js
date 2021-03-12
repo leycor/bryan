@@ -155,7 +155,7 @@ module.exports = {
                 description='> Ahora importe este archivo en el componente raiz de react para que se apliquen los estilos, para comprobar que tailwind se instaló de manera correcta deberas crear un **`<h1></h1>`** Y comprobar que no tiene ningún tipo de estilo por defecto.'
                 />
 
-<DocumentationSection link='https://www.npmjs.com/package/gh-pages' />
+<DocumentationSection link='https://tailwindcss.com/docs/guides/create-react-app' />
 
             </div>
 

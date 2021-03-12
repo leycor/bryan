@@ -27,6 +27,9 @@ import ReactHooksCustom from "../../components/molecules/react-guide/ReactHooksC
 import ReactUseContext from "../../components/molecules/react-guide/ReactUseContext";
 import ReactTailwind from "../../components/molecules/react-guide/ReactTailwind";
 import ReactGitPages from "../../components/molecules/react-guide/ReactGitPages";
+import ReactRouterInstalacion from "../../components/molecules/react-guide/ReactRouterInstalacion";
+import ReactRouterEjemplos from "../../components/molecules/react-guide/ReactRouterEjemplos";
+import ReactRouterHooks from "../../components/molecules/react-guide/ReactRouterHooks";
 
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link
@@ -90,9 +93,9 @@ export const reactGuide = [
     id: 5,
     temaryName: "REACT ROUTER",
     topic: [
-      { id: 1, topicName: "reactRouter1", topicLink: `${reactUrl}/react-router1` },
-      { id: 2, topicName: "reactRouter2", topicLink: `${reactUrl}/react-router2` },
-      { id: 3, topicName: "reactRouter3", topicLink: `${reactUrl}/react-router3` },
+      { id: 1, topicName: "Instalación", topicComponent: ReactRouterInstalacion, topicLink: `${reactUrl}/react-router-instalacion` },
+      { id: 2, topicName: "Ejemplos", topicComponent: ReactRouterEjemplos, topicLink: `${reactUrl}/react-router-ejemplos` },
+      { id: 3, topicName: "Hooks disponibles", topicComponent: ReactRouterHooks, topicLink: `${reactUrl}/react-router-hooks` },
     ],
   },
 
