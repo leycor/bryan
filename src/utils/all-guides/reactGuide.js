@@ -30,6 +30,7 @@ import ReactGitPages from "../../components/molecules/react-guide/ReactGitPages"
 import ReactRouterInstalacion from "../../components/molecules/react-guide/ReactRouterInstalacion";
 import ReactRouterEjemplos from "../../components/molecules/react-guide/ReactRouterEjemplos";
 import ReactRouterHooks from "../../components/molecules/react-guide/ReactRouterHooks";
+import ReactUseMemo from "../../components/molecules/react-guide/ReactUseMemo";
 
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link
@@ -85,6 +86,7 @@ export const reactGuide = [
       { id: 2, topicName: "useEffect", topicComponent: ReactUseEffect, topicLink: `${reactUrl}/useeffect`},
       { id: 3, topicName: "Custom Hook", topicComponent: ReactHooksCustom, topicLink: `${reactUrl}/custom-hooks`},
       { id: 4, topicName: "useContext", topicComponent: ReactUseContext, topicLink: `${reactUrl}/usecontext`},
+      { id: 5, topicName: "useMemo", topicComponent: ReactUseMemo, topicLink: `${reactUrl}/usememo`},
       { id: 5, topicName: "Reglas", topicComponent: ReactHooksReglas, topicLink: `${reactUrl}/reglas` },
     ],
   },

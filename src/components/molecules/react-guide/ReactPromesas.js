@@ -17,21 +17,37 @@ const ReactPromesas = () => {
                 <DescriptionSection
                 description='Una promesa representa un valor que puede estar disponible: ahora, en un futuro o nunca.'
                 />
+                <DescriptionSection
+                description='Se trata de declarar un objeto que recibirá dos parametros **`resolve`**, que se encargará de devolverte la respuesta en caso de que no exista ningún error y **`reject`** que será la respuesta que retornará en caso de que exista un error'
+                />
 
                 <CodeSection
                 language='javascript'
                 code={`
-const promesa = new Promise( (resolve, reject)=>{
+const data = [
+    {id:1, name:'Bryan'},
+    {id:2, name:'Johann'},
+    {id:3, name:'Jose'},
+    {id:4, name:'Mario'},
+]
+    
 
-    //Función que recibe un callBack y permite ejecutar una tarea en cierto tiempo 
-    setTimeout( ()=>{
-        resolve();
-    }, 2000 )
-});
+const getData = () => {
+    
+    return new Promise((resolve, reject) =>{
+        // Reject
+        data.length === 0 && reject( new Error('No existen datos'));
 
-promesa.then( ()=>{
-    console.log('Then de la promesa')
-})
+        // Resolve
+        setTimeout( () => { resolve(data); },1500)
+    })
+} 
+
+// Llamamos al método then para que nos devuelva lo que resolvió la promesa
+getData()
+    .then((data) => console.log(data))
+    .catch(error => console.log(error.message))
+                     
 `} />
 <DocumentationSection link='https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then' />
 

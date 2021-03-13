@@ -22,13 +22,11 @@ const ReactAsync = () => {
                 language='javascript'
                 code={`
 const getImagen = async () => {
-    const apiKey = 'C1khQe3Z7R1W2lfTO9myKeuShdqFYSGC';
 
     try {
         const resp = await fetch('http://api.giphy.com/v1/gifs/random?api_key=C1khQe3Z7R1W2lfTO9myKeuShdqFYSGC');
-        const { data } = await resp.json();
-        
-        const { url } = data.images.original;
+        const data = await resp.json();
+        console.log(data);
 
     } catch (error) {
         //Manejo de error

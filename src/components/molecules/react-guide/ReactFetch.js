@@ -21,11 +21,9 @@ const ReactFetch = () => {
                 <CodeSection
                 language='javascript'
                 code={`
-// Api Key privada
-const apiKey = 'C1khQe3Z7R1W2lfTO9myKeuShdqFYSGC';
 
 // Esta constante al tener fetch retorna un Response lo cual significa que es una promesa
-const peticion = fetch('http://api.giphy.com/v1/gifs/random?api_key=$ { apiKey }');
+const peticion = fetch('http://api.giphy.com/v1/gifs/random?}');
 
 peticion
     .then( resp => resp.json() )

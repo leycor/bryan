@@ -34,13 +34,7 @@ const Ejemplo = () => {
             // Este evento se ejecutará cuando el componente sea desmontado
             window.addEventListener('mousemove', mouseMove);
         }
-},[])
-
-    return (
-    <div>
-        <p>Eres genial</p>
-    </div>
-    );
+    },[])
 }
 `} />
                 <DescriptionSection
