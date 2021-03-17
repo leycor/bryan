@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bryan/static/css/main.18702f52.chunk.css",
-    "main.js": "/bryan/static/js/main.97a36ef3.chunk.js",
-    "main.js.map": "/bryan/static/js/main.97a36ef3.chunk.js.map",
+    "main.js": "/bryan/static/js/main.108d1790.chunk.js",
+    "main.js.map": "/bryan/static/js/main.108d1790.chunk.js.map",
     "runtime-main.js": "/bryan/static/js/runtime-main.1dac85eb.js",
     "runtime-main.js.map": "/bryan/static/js/runtime-main.1dac85eb.js.map",
     "static/js/2.02989e4d.chunk.js": "/bryan/static/js/2.02989e4d.chunk.js",
@@ -20,6 +20,7 @@
     "static/media/ilus.41df4493.svg": "/bryan/static/media/ilus.41df4493.svg",
     "static/media/js.f719efab.svg": "/bryan/static/media/js.f719efab.svg",
     "static/media/laravel.9d559409.svg": "/bryan/static/media/laravel.9d559409.svg",
+    "static/media/lol.a2d4fabc.svg": "/bryan/static/media/lol.a2d4fabc.svg",
     "static/media/none.39bbc2cc.svg": "/bryan/static/media/none.39bbc2cc.svg",
     "static/media/php.e7123345.svg": "/bryan/static/media/php.e7123345.svg",
     "static/media/python.597b2f1f.svg": "/bryan/static/media/python.597b2f1f.svg",
@@ -33,6 +34,6 @@
     "static/js/runtime-main.1dac85eb.js",
     "static/js/2.02989e4d.chunk.js",
     "static/css/main.18702f52.chunk.css",
-    "static/js/main.97a36ef3.chunk.js"
+    "static/js/main.108d1790.chunk.js"
   ]
 }
