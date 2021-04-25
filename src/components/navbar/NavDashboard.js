@@ -23,9 +23,10 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
 
             {/* Lista de hipervinculos */}
             <div className='flex flex-wrap content-center hidden md:flex'>
+            <Link to='/' className='link-item-sm ml-3 duration-300'>Inicio <i className="text-xs ml-1 text-gray-500 fas fa-external-link-alt"></i></Link>
                 {
                     menuTop.map( ({link, linkContent,id}) =>
-                    <Link key={id}  to={link} className='link-item-sm ml-3 duration-300'>{linkContent} <i className="text-xs ml-1 text-gray-500 fas fa-external-link-alt"></i></Link>
+                    <a key={id} href={link} target='__blank' className='link-item-sm ml-3 duration-300'>{linkContent} <i className="text-xs ml-1 text-gray-500 fas fa-external-link-alt"></i></a>
                     )
                 }
             </div>
@@ -44,9 +45,9 @@ const NavDashboard = ({title, menuTop, menuResponsive}) => {
             
             {/* Mostrar link con iconos */}
             <div className='flex justify-center my-3'>
-                <Link  to={ menuTop.find(({ id })=> id === 3).link }><i className="fab fa-linkedin text-2xl p-2 hover:text-green-700"></i></Link>
-                <Link  to={ menuTop.find(({ id })=> id === 1).link }><i className="fas fa-home text-2xl p-2 hover:text-green-700"></i></Link>
-                <Link  to={ menuTop.find(({ id })=> id === 2).link }><i className="fab fa-github-square text-2xl p-2 hover:text-green-700"></i></Link>
+                <a  href={ menuTop.find(({ id })=> id === 3).link } target='__blank'><i className="fab fa-linkedin text-2xl p-2 hover:text-green-700"></i></a>
+                <Link  to='/'><i className="fas fa-home text-2xl p-2 hover:text-green-700"></i></Link>
+                <a href={ menuTop.find(({ id })=> id === 2).link } target='__blank'><i className="fab fa-github-square text-2xl p-2 hover:text-green-700"></i></a>
 
             </div>
 

@@ -31,6 +31,12 @@ import ReactRouterInstalacion from "../../components/molecules/react-guide/React
 import ReactRouterEjemplos from "../../components/molecules/react-guide/ReactRouterEjemplos";
 import ReactRouterHooks from "../../components/molecules/react-guide/ReactRouterHooks";
 import ReactUseMemo from "../../components/molecules/react-guide/ReactUseMemo";
+import ReactReduxDependencias from "../../components/molecules/react-guide/ReactReduxDependencias";
+import ReactReduxStore from "../../components/molecules/react-guide/ReactReduxStore";
+import ReactReduxReducers from "../../components/molecules/react-guide/ReactReduxReducers";
+import ReactReduxActions from "../../components/molecules/react-guide/ReactReduxActions";
+import ReactReduxView from "../../components/molecules/react-guide/ReactReduxView";
+import ReactReduxHooks from "../../components/molecules/react-guide/ReactReduxUseHooks";
 
 // 3- Obtener e link de git por medio del id para luego asignarlos a mis temarios
 const reactUrl = guides.find( guide => guide.id === 5).link
@@ -87,12 +93,25 @@ export const reactGuide = [
       { id: 3, topicName: "Custom Hook", topicComponent: ReactHooksCustom, topicLink: `${reactUrl}/custom-hooks`},
       { id: 4, topicName: "useContext", topicComponent: ReactUseContext, topicLink: `${reactUrl}/usecontext`},
       { id: 5, topicName: "useMemo", topicComponent: ReactUseMemo, topicLink: `${reactUrl}/usememo`},
-      { id: 5, topicName: "Reglas", topicComponent: ReactHooksReglas, topicLink: `${reactUrl}/reglas` },
+      { id: 6, topicName: "Reglas", topicComponent: ReactHooksReglas, topicLink: `${reactUrl}/reglas` },
     ],
   },
 
   {
     id: 5,
+    temaryName: "REDUX",
+    topic: [
+      { id: 1, topicName: "Dependencias", topicComponent: ReactReduxDependencias, topicLink: `${reactUrl}/redux-dependencias` },
+      { id: 2, topicName: "Actions", topicComponent: ReactReduxActions, topicLink: `${reactUrl}/redux-actions`},
+      { id: 3, topicName: "Reducers", topicComponent: ReactReduxReducers, topicLink: `${reactUrl}/redux-reducer` },
+      { id: 4, topicName: "Store", topicComponent: ReactReduxStore , topicLink: `${reactUrl}/redux-store`},
+      { id: 5, topicName: "view", topicComponent: ReactReduxView, topicLink: `${reactUrl}/redux-view`},
+      { id: 6, topicName: "Hooks", topicComponent: ReactReduxHooks, topicLink: `${reactUrl}/redux-useSelector`},
+    ],
+  },
+
+  {
+    id: 6,
     temaryName: "REACT ROUTER",
     topic: [
       { id: 1, topicName: "Instalación", topicComponent: ReactRouterInstalacion, topicLink: `${reactUrl}/react-router-instalacion` },
@@ -102,7 +121,7 @@ export const reactGuide = [
   },
 
   {
-    id: 6,
+    id: 7,
     temaryName: "UTILIDADES",
     topic: [
       { id: 1, topicName: "Tailwind & React", topicComponent: ReactTailwind, topicLink: `${reactUrl}/react-tailwind` },

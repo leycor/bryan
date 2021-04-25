@@ -46,10 +46,10 @@ const MainPage = () => {
 
             <Footer
                 title= 'Bryan Rivas Venezuela 2021. All Rights Reserved'
-                linkedin= '#linkedin'
-                github= '#github'
+                linkedin= 'https://www.linkedin.com/in/bryan-rivas-343bb1208/'
+                github= 'https://github.com/leycor'
                 email= 'bryanjohann1995@gmail.com'
-                phone= '+58 4143378626'
+                phone= '+584143378626'
             />
         </Fragment>
     );
